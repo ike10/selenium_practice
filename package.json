@@ -1,0 +1,20 @@
+{
+  "name": "selenium-node-automation-project",
+  "version": "0.0.1",
+  "description": " Selenium nodejs automation project",
+  "scripts": {
+    "test": "npm run single && npm run parallel",
+    "single": "./node_modules/.bin/mocha tests/single.test.js conf/single.conf.js",
+    "parallel": "./node_modules/.bin/mocha tests/parallel.test.js conf/parallel.conf.js --timeout=100000"
+  },
+  "keywords": [
+    "mocha",
+    "LambdaTest",
+    "selenium",
+    "examples"
+  ],
+  "dependencies": {
+    "mocha": "^6.2.0",
+    "selenium-webdriver": "^3.0.0-beta-3"
+  }
+}
